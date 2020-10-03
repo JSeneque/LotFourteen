@@ -20,6 +20,12 @@ public class PlayerMovement : MonoBehaviour
     Vector3 velocity;
     bool isGrounded;
 
+
+    private void Start()
+    {
+        Debug.Log(transform.position);
+    }
+
     // Update is called once per frame
     void Update()
     {
