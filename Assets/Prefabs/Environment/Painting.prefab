@@ -11,9 +11,11 @@ GameObject:
   - component: {fileID: 2956984688602182543}
   - component: {fileID: 528961124502367421}
   - component: {fileID: 7067590126478742353}
-  m_Layer: 0
+  - component: {fileID: 31398188}
+  - component: {fileID: 31398185}
+  m_Layer: 9
   m_Name: Painting
-  m_TagString: Untagged
+  m_TagString: InteractObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25,9 +27,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4136245142448563339}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.4824004, y: 1.9137588, z: -3.4993448}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -79,3 +81,31 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &31398188
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4136245142448563339}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0562205, y: 1.4330647, z: 0.08210145}
+  m_Center: {x: 0.0000009536743, y: 0, z: 0.08169237}
+--- !u!114 &31398185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4136245142448563339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7aad55f2dcbeade499170db5c98b225d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectName: Painting
+  extraInfo: There are only two numbers out of fours visible "4 _ 2 _ "
+  inspectController: {fileID: 0}

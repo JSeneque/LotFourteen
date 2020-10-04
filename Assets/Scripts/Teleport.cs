@@ -6,21 +6,21 @@ public class Teleport : MonoBehaviour
 {
     [SerializeField]
     private float offset = 7.75f;
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    [SerializeField]
+    private Transform location;
 
     private void OnTriggerEnter(Collider other)
     {
         
-
-        Vector3 currentPos = other.transform.position;
-        Debug.Log("Before: " + currentPos);
-
-        other.transform.position = new Vector3(currentPos.x, currentPos.y + offset, currentPos.z);
-        Debug.Log("After: " + other.transform.position);
+        if(location == null)
+        {
+            Vector3 currentPos = other.transform.position;
+            other.transform.position = new Vector3(currentPos.x, currentPos.y + offset, currentPos.z);
+        }
+        else
+        {
+            other.transform.position = location.position;
+        }
+        
     }
 }
